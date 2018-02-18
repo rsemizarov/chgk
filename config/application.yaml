@@ -1,0 +1,3 @@
+services:
+  App\Application\LastTournaments\LastTournamentsQuery: '@App\Infrastructure\Mysql\MysqlLastTournamentsQuery'
+  App\Application\LastTournaments\TournamentsQuery: '@App\Infrastructure\Mysql\MysqlTournamentsQuery'

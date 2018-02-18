@@ -1,0 +1,12 @@
+index:
+  path: /
+  controller: App\Controller\Tournaments\LastTournamentsController::index
+
+
+api.last:
+  path: api/last/{limit}
+  controller: App\Controller\Api\ApiLastTournamentsController::index
+
+tour:
+  path: tour/{id}
+  controller: App\Controller\Tournaments\TournamentController::index

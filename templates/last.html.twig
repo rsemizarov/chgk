@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+{% block body -%}
+    <h1>Последние турниры</h1>
+
+    {% for t in tournaments %}
+        <div>
+            {{ t.addedDate | date('d.m.Y')}}: <a href="{{ path('tour', {'id' : t.id}) }}">{{ t.title }}</a>
+                ({{ t.date1 | date('d.m.Y') }}{% if t.date2 %}&nbsp;&mdash;&nbsp;{{ t.date2 | date('d.m.Y') }}{% endif %})
+        </div>
+    {% endfor %}
+{% endblock %}
